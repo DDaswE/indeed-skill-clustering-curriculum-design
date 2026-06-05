@@ -4,16 +4,7 @@ Web-scraping, skill-extraction, clustering, and curriculum design workflow built
 
 ## Preview
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="./preview_curriculum_comparison.png" alt="Curriculum comparison" width="100%">
-    </td>
-    <td width="50%">
-      <img src="./preview_skill_tsne.png" alt="Skill clustering t-SNE" width="100%">
-    </td>
-  </tr>
-</table>
+![Selected final hierarchical curriculum](./preview_final_hierarchical_curriculum.png)
 
 ## Project summary
 
@@ -21,9 +12,9 @@ This project turns web-scraped Indeed job postings into a skill-based curriculum
 
 ## Problem
 
-This project aims to determine the skills that are most in demand in modern data science, analytics, and AI positions using self-scraped Indeed job postings.
+The assignment asks for a data-driven curriculum design for a new "Master of Business and Management in Data Science and Artificial Intelligence" program at the University of Toronto.
 
-> Those skills are then clustered into course-sized groups to design a graduate curriculum based on observed market demand rather than intuition alone. The final output is a 10-course master's curriculum that is compared across clustering methods and further validated using an external industry report and LLM-based interpretation.
+> The curriculum should cover technical, business, and soft skills needed for careers such as data scientist, analytics manager, data analyst, business analyst, and AI system designer. The project requires extracting in-demand skills from Indeed job postings, applying NLP or N-gram methods to convert posting text into skill features, and using clustering algorithms to group skills into 8-12 course-sized modules. Hierarchical clustering is required, and a second clustering method such as k-means or DBSCAN must also be used for comparison.
 
 ## Data
 
@@ -43,14 +34,17 @@ This project aims to determine the skills that are most in demand in modern data
 - ensemble comparison of clustering-based curriculum modules
 - Gemini-assisted interpretation and validation of curriculum structure
 
-## Key outputs
+## Achievements
 
-- cleaned job-posting dataset
-- missing-description recovery workflow
-- skill co-occurrence analysis
-- clustering comparison across multiple curriculum designs
-- final curriculum module recommendations
-- interpretation and validation of the resulting curriculum structure
+- collected 1,015 self-scraped Indeed postings across Canada and the United States
+- cleaned and enriched job-posting fields including title, company, location, salary, description, and posting link
+- built a skill vocabulary from 55 manually seeded skills and 60 Gemini-expanded skills, then retained 114 skills after N-gram extraction
+- generated six visual analyses covering in-demand skills, co-occurrence, seniority differences, hiring companies, job titles, and skill categories
+- engineered 12 skill-level features covering demand intensity, salary signal, seniority, geography, company diversity, and Python/SQL co-occurrence
+- implemented hierarchical clustering from a cosine-distance matrix and k-means clustering from engineered skill features
+- compared hierarchical, k-means, and ensemble curriculum structures
+- selected the hierarchical-clustering curriculum as the final model because it produced the clearest 10-course pathway, with 114 skills assigned once across course-sized clusters
+- validated the final curriculum against an external industry report and Gemini-assisted curriculum interpretation
 
 ## Repository structure
 
@@ -60,10 +54,10 @@ This project aims to determine the skills that are most in demand in modern data
 | `xu_1007901512_webscraping-1.ipynb` | Web scraping workflow notebook |
 | `xu_1007901512_assignment3-1.pdf` | Exported report version of the assignment |
 | `webscraping_results_assignment3-1.csv` | Scraped and enriched job-posting output |
-| `preview_curriculum_comparison.png` | Skills-per-course comparison across methods |
+| `preview_final_hierarchical_curriculum.png` | Final selected hierarchical curriculum preview |
 | `preview_skill_tsne.png` | t-SNE clustering visualization of skills |
 | `preview_skill_heatmap.png` | Skill co-occurrence heatmap |
 
-## Notes
+## Skills practiced
 
-The two notebooks belong together because one produces the data and the other turns that data into a curriculum design model. Keeping them in one repository makes the project story much clearer.
+This project practices web scraping, unstructured text cleaning, skill extraction, N-gram matching, feature engineering, unsupervised learning, clustering evaluation, curriculum design from labor-market evidence, and LLM-assisted interpretation with human validation.
