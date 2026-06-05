@@ -12,7 +12,7 @@ This project turns web-scraped Indeed job postings into a skill-based curriculum
 
 ## Problem
 
-The assignment asks for a data-driven curriculum design for a new "Master of Business and Management in Data Science and Artificial Intelligence" program at the University of Toronto.
+This project develops a data-driven curriculum design for a proposed "Master of Business and Management in Data Science and Artificial Intelligence" program at the University of Toronto.
 
 > The curriculum should cover technical, business, and soft skills needed for careers such as data scientist, analytics manager, data analyst, business analyst, and AI system designer. The project requires extracting in-demand skills from Indeed job postings, applying NLP or N-gram methods to convert posting text into skill features, and using clustering algorithms to group skills into 8-12 course-sized modules. Hierarchical clustering is required, and a second clustering method such as k-means or DBSCAN must also be used for comparison.
 
