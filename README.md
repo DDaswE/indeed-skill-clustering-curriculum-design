@@ -21,7 +21,9 @@ This project turns web-scraped Indeed job postings into a skill-based curriculum
 
 ## Problem
 
-The project asks how job-posting skills can be grouped into coherent curriculum modules that reflect real market demand.
+This project aims to determine the skills that are most in demand in modern data science, analytics, and AI positions using self-scraped Indeed job postings.
+
+> Those skills are then clustered into course-sized groups to design a graduate curriculum based on observed market demand rather than intuition alone. The final output is a 10-course master's curriculum that is compared across clustering methods and further validated using an external industry report and LLM-based interpretation.
 
 ## Data
 
