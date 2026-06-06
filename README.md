@@ -2,9 +2,7 @@
 
 Web-scraping, skill-extraction, clustering, and curriculum design workflow built from Indeed job postings.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12MA4KHZ-sht5xdzNFT7OhlNFD8lazMcj?usp=sharing) [GitHub Repo](https://github.com/DDaswE/indeed-skill-clustering-curriculum-design)
-
-> Opening this notebook in Colab creates a working copy. The source notebook in GitHub remains unchanged unless a user already has write access to this repository.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12MA4KHZ-sht5xdzNFT7OhlNFD8lazMcj?usp=sharing)
 
 ## Preview
 
